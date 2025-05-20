@@ -1,0 +1,147 @@
+
+<!--
+Name:Charan Gambhir
+Course:WebDev
+Teacher:Ms. Hoitink
+School:Pembinatrails collegiette
+Date Last Modified:05/19/2025
+-->
+<!--i only had 3 sources; the pdf of the plan, chatgpt, and W3 schools-->
+
+
+<!--each section or div will also contain a tabindex identifier so people can tab to it-->
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Naawi-Oodena</title> 
+    <link rel="stylesheet" href="CSS/styles.css"/> 
+</head>
+<style>
+    /*makes it so that the first paragraph isnt swalloed behind the video and navbar and makes it start in a resonable place*/
+    #main-content{ 
+    margin-top: 1000px; 
+    display: block; 
+} 
+</style>
+<body> 
+    <!-- Skip link for accessibility -->
+<a id="skip" href="#main-content">skip to main content</a> 
+<!--my nav bar-->
+<nav> 
+    <!--the list items for my navbar-->
+    <ul> 
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="moreinfo.html">More Info</a></li> 
+    <!--the flag takes you back to the first page-->
+        <!--proper citation for image: R/Vexillology on Reddit: Treaty One Flag, www.reddit.com/r/vexillology/comments/pj0zz7/treaty_one_flag/. Accessed 20 May 2025. -->
+    <a href="index.html"><img alt="an image of the treaty 1 flag, rectangular shape, top half green, bottom half blue, in the middle a dividing red line with a yellow circle representing the sun"
+        src="images/a8qepasbdwl71.png"/></a> 
+    <li><a href="contacts.html">Contact Us</a></li> 
+    <li><a href="review.html">Review Us</a></li> 
+    </ul> 
+    </nav> 
+    <!--my video-->
+    <div id="video" tabindex="0"> 
+        <!--how i made my video loop-->
+                <!--original video: https://www.pexels.com/video/forest-in-autumn-5698883/ made by @medialoopers-->
+        <video autoplay muted loop width="100%" height="100%"> 
+            <source src="5698883-uhd_3840_2160_30fps.mp4" type="video/mp4"> 
+        </video> 
+        <!--this is the overlay that goes over the video-->
+        <div id="overlay"> 
+            <header>
+            <!--this is the title that goes over the video-->
+            <h3 id="text-overlay">Welcome to Naawi Oodena!</h3> 
+            </header>
+            <p id="text-overlay" style="font-size: 32px; margin-top: 0px;">scroll down for info!</p> 
+            <!--this is the arrow that goes over the video that bounces-->
+            <p id="down-arrow">&downarrow;</p> 
+        </div> 
+    </div> 
+
+<section id="main-content" tabindex="0"> 
+    <div> 
+        <!--this is the section of my website for a kind of introduction-->
+<header><h1>Welcome to Naawi-Oodena</h1></header>
+        <p>Welcome to Naawi-Oodena, we are a community based in treaty 1, Winnipeg, Manitoba. Naawi-oodena meaning “centre of the heart and community” in Anishinaabe, is our 160-acre diverse community!
+            With usis led by Treaty One Nation and Canada Lands Company, Our area has done what no others have, it is the biggest indigenous economic zone in all of Canada!
+            Our vibrant community integrates residential, commercial, cultural, and recreational spaces, all rooted in Indigenous design principles and sustainability, although again, our community is vibrant with many varying cultural linings that are also included throughout our community! 
+        </p> 
+        <!--this image was made using chatgpt-->
+        <img tabindex="0" src="images/20250520_035626244_iOS.png" alt="an image of a welcome sign to Naawi Oodena, it is a rectangular sign with a tan background , the text is in dark brown and says 'Welcome to Naawi Oodena' in the middle of the sign, it has a brown eagle siluohette,
+        and on either sides of the sign there are 2 brown stone support beams"/> 
+    </div> 
+</section>
+<!--adds space between every paragraph-->
+<div id="space"></div>
+
+<!--tab index makes it so that you can tab to it-->
+<section tabindex="0">
+<!--this has the youtube video about the creation of naawi oodena, the OG link is-> https://www.youtube.com/watch?v=Nv0gmzD47Dc  -->
+    <header><h1>Process of Naawi Oodena</h1></header>
+    <!--video has processes about Naawi Oodena including the approval aswell-->
+<figure><iframe width="100%" height="1000px" src="https://www.youtube.com/embed/Nv0gmzD47Dc" 
+    title="Naawi-Oodena: A Town Hall Conversation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe></figure>
+<!--this is the link to the original video-->
+<a href="https://www.youtube.com/watch?v=Nv0gmzD47Dc" style="font-size: 12px;">original link</a>
+<!--this is the caption for the video-->
+<figcaption><h2>This is a discussion of when Naawi Oodena was just being built</h2></figcaption>
+</section>
+
+<!--adds space between every section-->
+<div id="space"></div>
+
+<!--tab index makes it so that you can tab to it-->
+<section tabindex="0">
+    <div>
+        <!--this is the section of my website about the living situation-->
+<header><h1 tabindex="0">Residential Living</h1></header>
+        <p>This is our residential Living sector of our website!
+            Naawi-Oodena offers a range of housing to accommodate our citizens diverse needs:</p>
+            <h2 tabindex="0">Low-Density Housing</h2>
+            <p>We include affordable and inclusive low-density housing; from luscious large lake houses that include up to 3 stories, walk out decks, pools, and even patios,
+            to our smaller more affordable but yet still single-family townhouses, including lots of space and intricate kitchen designs for families looking for spacious living quarters.</p>
+            <h2>Medium-Density Housing</h2>
+            <p tabindex="0">If you are still interested in living here but you may not have the financial capability to support this type of housing, we still also have a medium density housing all over our community.
+            From high rise apartments that may be small but offer amazing views, to our more spacious stacked townhouses that include balconies with spectacular internal support.</p>
+                    <!--this image was made using chatgpt-->
+            <img tabindex="0" src="images/20250520_034355018_iOS 1.png" alt="an image of around 16 different town houses, 3 different colours; tan dark gray and brown.
+            each house is rectangular shaped with the door, and 2 window above that with a flat roof and a tree + some shrubs in the front, they are 3 stories tall"/>
+    </div>
+</section>
+
+<!--adds space between every section-->
+<div id="space"></div>  
+<!--this section is about the commercial spaces-->
+<!--tab index makes it so that you can tab to it-->
+<section tabindex="0">
+    <div>
+<header><h1>Commercial spaces</h1></header>
+        <p>When talking about Naawi-Oodena's commercial spaces, we are talking about the heart of our community; and we have 3 catagories:</p>
+        <h2 tabindex="0">Economic Opportunities</h2>
+        <p>Naawi-Oodena has developed atleast1.2 million square feet of commercial space so far, including the adoption of economic growth and job creation. with this thousands of people have found employment in our community, maybe you want to be next!??</p>
+        <h2 tabindex="0">Integrated design</h2>
+        <p>Our commercial areas are seamlessly integrated with residential zones, promoting walkability, eco friendly cycling and community interaction. The design emphasizes Indigenous architectural elements and includes cool artwork from our indigenous designing team.</p>
+        <h2 tabindex="0">Business Diversity</h2>
+        <p>From large retail shops and restaurants to office spaces and community services, the mixed-use areas are designed to encapture a variety of businesses, supporting a vibrant local economy for all to use. 
+        </p>
+    </div>
+</section>
+
+<!--adds space between every section-->
+<div id="space"></div>  
+
+<!--this is my footer-->
+<footer tabindex="0">
+    <ul>
+        <li>
+            <!--this is my only list item that takes you to the start of the website-->
+                <a href="index.html">charan 2025&copy;&trade;</a>
+        </li>
+    </ul>
+</footer>
+</body> 
+</html> 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+</head>
+<style>
+    /*makes it so that the first paragraph isnt swalloed behind the video and navbar and makes it start in a resonable place*/
+    #main-content{ 
+    margin-top: 1000px; 
+    display: block; 
+}
+h1{background-color: #bd60b2;}
+</style>
+<body>
+    <!-- Skip link for accessibility -->
+    <a id="skip" href="#main-content">skip to main content</a>  
+    <!--my nav bar-->
+<nav> 
+    <ul> 
+    <!--the list items for my navbar-->
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="moreinfo.html">More Info</a></li> 
+    <!--the flag takes you back to the first page-->
+        <!--proper citation for image: R/Vexillology on Reddit: Treaty One Flag, www.reddit.com/r/vexillology/comments/pj0zz7/treaty_one_flag/. Accessed 20 May 2025. -->
+    <a href="index.html"><img alt="an image of the treaty 1 flag, rectangular shape, top half green, bottom half blue, in the middle a dividing red line with a yellow circle representing the sun"
+        src="images/a8qepasbdwl71.png"/></a> 
+    <li><a href="contacts.html">Contact Us</a></li> 
+    <li><a href="review.html">Review Us</a></li> 
+    </ul> 
+    </nav> 
+    <!--my video-->
+    <div id="video"> 
+        <video autoplay muted loop width="100%" height="100%"> 
+                    <!--original video: https://www.pexels.com/video/forest-in-autumn-5698883/ made by @medialoopers-->
+            <source src="5698883-uhd_3840_2160_30fps.mp4" type="video/mp4"> 
+        </video> 
+        <!--this is the overlay that goes over the video-->
+        <div id="overlay"> 
+            <header>
+            <!--this is the title that goes over the video-->
+            <h3 id="text-overlay">Review Our Website!</h3> 
+            </header>
+            <p id="text-overlay" style="font-size: 32px; margin-top: 0px;">We'd love to hear your opinion on how to make this website better!</p> 
+            <!--this is the arrow that goes over the video that bounces-->
+            <p id="down-arrow">&downarrow;</p> 
+        </div> 
+    </div> 
+
+    <!--this section of my website is just for a review form-->
+<article id="main-content">
+    <section>
+<div>
+
+<section tabindex="0" id="review-section">
+<div class="form-wrapper">
+    <header><h1>Review Us</h1></header>
+    <p>We d love to hear your thoughts about your experience at Naawi-Oodena. Your feedback helps us grow!</p>
+    <!--this link takes you to an external page that just says thanks for participating-->
+    <form action="surveyresponse.html" method="GET">
+    <label for="name">Your Name:</label>
+<!--makes it so you must put credentials to participate-->
+    <input type="text" id="name" name="name" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email">
+
+    <!--this is just the star rating area -->
+    <label for="rating">Rating (1 to 5):</label>
+    <select id="rating" name="rating" required>
+        <option value="">Select</option>
+        <option value="5">★★★★★ - gollee jee charan this is great!</option>
+        <option value="4">★★★★ - omg ur so good at this</option>
+        <option value="3">★★★ - mid</option>
+        <option value="2">★★ - bro its so bad</option>
+        <option value="1">★ - its so trassshhhh</option>
+    </select>
+    <label for="review">Your Review:</label>
+    <!--text area is kind of just like input text but it includes more space as you can controll the rows and stuff-->
+    <textarea id="review" name="review" rows="2" required></textarea>
+    <!--this is the submit button-->
+    <button type="submit">Submit Review</button>
+    </form>
+</div>
+</section>
+
+<!--this is just for spacing-->
+<div id="space"></div>  
+<!--my navbar-->
+<footer tabindex="0">
+    <ul>
+        <li>
+            <!--this one list item when  you click on it takes you to the first page-->
+                <a href="index.html">charan 2025&copy;&trade;</a>
+        </li>
+    </ul>
+</footer>
+</body>
+</html>

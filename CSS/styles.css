@@ -1,0 +1,287 @@
+/* For my website I decided to use a complementary theme, I decided to use this because although i liked the monochromatic theme from last time,
+I decided to use something new and different, I also wanted to use a complementary theme because I wanted to use a more diverse eye catching color scheme.
+
+for my primary colour I decided to use #42213E or a deep midnight purple colour, I decided to use this because attributes of this color are creativity,
+and with a project like Naawi-Oodena I wanted to use a color that represents creativity and innovation. Although the color may be quite dark,
+it will also allow to bring light toward more important pieces of my website, such as the logo and the text.
+
+for my secondary color i decided to use #214225 or a deep forest green, I decided to use this because attributes of this color are growth and harmony,
+abd that is a project that Naawi-Oodena is supposed to be all about. Although the colour may also be quite dark, the complementary color them allows me to-
+associate the two colors together, and create a more eye catching color scheme because of their difference.
+
+for my accent color I decided to use #bd60b2 or a light purple because i wanted my websites to meet the web content accessibility guidelines, so i needed a light 
+backdrop for my text, and i decided to use a lighter shade of my midnight purple from before.
+
+for my shades I used 2 different shades being white and black, i decided to use white as it looked aesthetically pleasing with the purple and green,
+and it also keeps the contrast ratio close enough to 7:1 (since my text is going to end up having that ratio because of the background change)
+
+i used black because while making a website with lots of text white can also put too much strain on the eyes, and black is the reccomended color for text,
+the plan is to use a lighter purple backdrop for the smaller text to bring the expectation of accessibility.
+
+My websites theme is a dark theme and these colours will allow me to create a dark theme
+*/
+
+
+/*this is how i added aielron font original link > https://www.1001fonts.com/aileron-font.html*/ 
+@font-face {
+    font-family: 'Aielron-thin,';
+    src: url(/fonts/aileron.thin.otf); /*selection for which folder its from*/
+}
+
+/*this is my basic customization for the whole website*/
+* {
+    margin: 0px;/*makes all margin 0*/
+    padding: 0px;/*makes all padding 0*/
+    box-sizing: border-box; /*makes all box sizing border box*/
+
+    /*this is all the CSS for the animation to function correctly on every browser*/
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-delay: 0ms;
+    -moz-animation-delay: 0ms;
+    -o-animation-delay: 0ms;
+    animation-delay: 0ms;
+
+    -webkit-animation-name: page;
+    -moz-animation-name: page;
+    -o-animation-name: page;
+    animation-name: page;
+}
+/* this is the animation for the page to fade in when it loads */
+@-webkit-keyframes page {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/*the rest of this section is just for the other browsers to experience the same animation*/
+@-moz-keyframes page {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes page {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes page {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+nav {
+    background-color: #214225; /*makes nav Deep Forest Green */
+    padding: 10px 30px;/*adds padding to the nav*/
+    position: fixed;/*makes the nav fixed to the top of the page always*/
+    top: 0;/*sets the nav to the top of the page*/
+    width: 100%;/*sets the width of the nav to 100%*/
+    z-index: 9;/*sets the z-index of the nav to 9 for it to appear over my background that includes opacity so it also doesnt turn translucent*/
+}
+
+nav ul {
+    display: flex; /*makes the nav use flex in oreder to center the text*/
+    justify-content: center; /*centers the text in the nav*/
+    align-items: center; /*aligns the text in the nav*/
+    list-style: none; /*removes the styling from the list*/
+    gap: 150px; /*adds a gap between the text*/
+}
+
+nav li {
+    display: flex; /*makes the list items use flex*/
+    align-items: center; /*aligns the list items to center*/
+}
+
+nav a {
+    text-decoration: none; /*removes the underline from the text*/
+    color: #ffffff; /*sets the color of the text to white*/
+    font-size: 20px; /*sets the font size of the text to 20px*/
+    padding: 10px; /*adds padding to the text*/
+    margin: 0px; /*removes the margin from the text*/
+    border: 0px; /*removes the border from the text*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    -webkit-transition: color 0.7s ease, box-shadow 0.7s ease; /*for my transition*/
+    /*for other browsers to also have this tranition*/
+    -moz-transition: color 0.7s ease, box-shadow 0.7s ease;
+    -o-transition: color 0.7s ease, box-shadow 0.7s ease;
+    transition: color 0.7s ease, box-shadow 0.7s ease;
+}
+
+nav a:hover {
+    color: #ff9d00; /*when nav links are hovered over turns orange*/
+    box-shadow: 0px 0.5px #ff9d00; /*when nav links are hovered over adds a line underneath*/
+}
+
+nav img {
+    height: 56px; /*sets the height of the flag to 56px*/
+    display: block; /*makes the flag a block element*/
+}
+
+body {
+    background-color: #42213E; /*sets the background color of the body to Deep Midnight Purple*/
+}
+
+p {
+    font-size: 32px; /*sets the font size of the text to 32px*/
+    color: black; /*sets the color of the text to black*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    text-align: center; /*centers the text*/
+    line-height: 44.8px; /*sets the line height of the text to 44.8px (1.4x more than font size)*/
+    padding: 5px; /*sets 5px padding to the text*/
+    overflow: auto; /*sets the overflow of the text to auto*/
+    font-weight: bold; /*sets font to be bold*/
+    letter-spacing: 2px; /*makes it so each letter is spaced apart so its easier to read*/ 
+}
+
+h2 {
+    font-size: 40px; /*sets the font size of the text to 40px*/
+    color: #000000; /*sets the color of the text to black*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    text-align: center; /*centers the text*/
+    padding: 20px; /*sets 20px padding to the text*/
+}
+
+h1 {
+    font-size: 64px; /*sets the font size of the text to 64px*/
+    color: white; /*sets the color of the text to white*/
+    text-align: center; /*centers the text*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    padding: 20px; /*sets 20px padding to the text*/
+    background-color: #42213E; /*i wanted the big heading to be very easy to see so i put it over a dark colour unlike the rest which are over a light colour*/
+}
+
+#video {
+    margin-top: 50px; /*adds margin to the top of the video so the fixed navbar doesnt cut the top of*/
+    position: absolute; /*sets the position of the video to absolute*/
+    display: flex; /*makes the video use flex*/
+    justify-content: center; /*centers the video*/
+    align-content: center;  /*aligns the video to center*/
+}
+
+#overlay {
+    height: 100%; /*sets the height of the overlay to 100%*/
+    width: 100%; /*sets the width of the overlay to 100%*/
+    background-color: rgba(0, 0, 0, 0.5); /*adds opacity to create a cool shadow effect*/
+    position: absolute; /*sets the position of the overlay to absolute so i can use z index*/
+    z-index: 2; /*sets the z-index of the overlay to 2 so it appears over the video*/
+}
+
+#text-overlay {
+    color: white; /*sets the color of the text to white*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    font-size: 64px; /*sets the font size of the text to 64px*/
+    text-align: center; /*centers the text*/
+    z-index: 3; /*sets the z-index of the text to 3 so it appears over the overlay and video*/
+    margin-top: 300px; /*sets the margin of the text to 300px so it doesnt stay at the top of the video instead the middle*/
+}
+
+#down-arrow {
+    color: white; /*sets the color of the text to white*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    font-size: 64px; /*sets the font size of the text to 64px*/
+    text-align: center; /*centers the text*/
+    z-index: 3; /*sets the z-index of the text to 3 so it appears over the overlay and video*/
+    margin-top: 0px; /*sets the margin of the text to 0px so it stays at the top of the video instead the middle*/
+
+    /*this is the animation for the down arrow to make it bounce up and down*/
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-duration: 3s;
+
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: arrow;
+    -moz-animation-name: arrow;
+    -o-animation-name: arrow;
+    animation-name: arrow;
+}
+/*the animation bit*/
+@-webkit-keyframes arrow {
+    0% { -webkit-transform: translateY(0%); }/*sets it at the top*/
+    50% { -webkit-transform: translateY(70%); } /*sets it at the bottom*/
+    100% { -webkit-transform: translateY(0%); }/*sets it back at the top*/
+}
+/*the rest of this section is just for the other browsers to experience the same animation*/
+@-moz-keyframes arrow {
+    0% { -moz-transform: translateY(0%); }
+    50% { -moz-transform: translateY(70%); }
+    100% { -moz-transform: translateY(0%); }
+}
+@-o-keyframes arrow {
+    0% { -o-transform: translateY(0%); }
+    50% { -o-transform: translateY(70%); }
+    100% { -o-transform: translateY(0%); }
+}
+@keyframes arrow {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(70%); }
+    100% { transform: translateY(0%); }
+}
+/*this is the button i made for accesibility, it is the first thing you tab on in my website*/
+#skip {
+    color: white; /*sets the color of the text to white*/
+    position: relative; /*sets the position of the button to relative sso i can use z index*/
+    z-index: 8; /*makes the z index 1 less so then it doesnt appear over the nav bar without being activated*/
+}
+/*this is the hover effect for the button so when you tab over it you can actually see it*/
+#skip:focus {
+    color: rgb(55, 0, 255); /*sets the color of the text to a light purple*/
+    position: relative; /*sets the position of the button to relative so i can use z index*/
+    z-index: 100; /*sets the z-index of the button to 100 so it appears over the everything*/
+    font-size: 20px; /*sets the font size of the text to 20px*/
+}
+
+section {
+    margin-left: 50px; /*adds margin to the left of the section*/
+    margin-right: 50px; /*adds margin to the right of the section*/
+    background-color: #bd60b2; /*adds a white backdrop for accessibility*/
+}
+
+#space {
+    margin-top: 50px; /*just for space between each section*/
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #214225; /*makes the footer Deep Forest Green */
+    padding:10px 30px; /*adds padding to the footer*/
+    top: 0; /*sets the footer to the top of the page*/
+    width: 100%; /*sets the width of the footer to 100%*/
+}
+
+footer ul {
+    display: flex; /*makes the footer use flex in order to center the text*/
+    justify-content: center; /*centers the text in the footer*/
+    align-items: center; /*aligns the text in the footer*/
+    list-style: none; /*removes the styling from the list*/
+}
+
+footer a {
+    text-align: center; /*centers the text*/
+    color: #ffffff; /*sets the color of the text to white*/
+    font-size: 20px; /*sets the font size of the text to 20px*/
+    font-family: 'Aielron-thin,'; /*sets the font family of the text to Aielron*/
+    text-decoration: none; /*removes the underline from the text*/
+    width: 100%; /*sets the width of the text to 100%*/
+}
+
+img{
+    display: flex; /*makes the image use flex*/
+    justify-content: center; /*centers the image*/
+    margin-right: auto; /*aligns the image to the center*/
+    margin-left: auto;
+    height: 500px;
+}
